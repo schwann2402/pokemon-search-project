@@ -1,0 +1,168 @@
+:root {
+  --red-background: #DE5239;
+  --text: #FFD57B;
+  --box-color: #FF9441;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--red-background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+img {
+  height: auto;
+  width: 200px;
+}
+
+label {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+#search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+#search-input, #search-button {
+  min-width: 25%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#search-button {
+  font-size: 20px;
+  color: var(--red-background)
+}
+
+#search-button:hover {
+  cursor: pointer;
+}
+
+#result-container {
+  background-color: var(--box-color);
+  color: white;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.84);
+}
+
+
+table {
+  text-align: center;
+  margin: 10px auto;
+  background-color: var(--red-background);
+  color: white;
+  width: 500px;
+}
+
+table, th, td {
+  border: 2px solid;
+}
+
+.hidden {
+  display: none !important;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#name-and-id {
+  display: flex;
+  justify-content: center;
+  gap: 2px
+}
+
+#sprite {
+  width: 200px;
+  height: auto;
+}
+
+#types { 
+  font-weight: bolder;
+}
+
+#fire {
+  background-color: red;
+}
+
+#flying {
+  background-color: rgb(118, 152, 182);
+}
+
+#water {
+  background-color: blue;
+}
+
+#rock {
+  background-color: rgba(128, 128, 128, 0.986);
+}
+
+#ground {
+  background-color: rgb(220, 180, 128);
+}
+
+#steel {
+  background-color: slategrey;
+}
+
+#ghost {
+  background-color: rgb(240, 165, 240);
+}
+
+#grass {
+  background-color: rgb(195, 214, 166);
+}
+
+#poison {
+  background-color: purple;
+}
+
+#bug {
+  background-color: rgb(122, 137, 98);
+}
+
+#normal {
+  background-color: #FFD57B;
+}
+
+#electric {
+  background-color: yellow;
+  color: black
+}
+
+#psychic {
+  background-color: violet;
+  color: black;
+}
+
+#fire, #electric, #flying, #water, #water, #rock, #ground, #steel, #ghost, #grass, #poison, #bug, #normal, #electric, #psychic{
+  margin: 0 auto;
+  max-width: fit-content;
+  text-align: center;
+}
